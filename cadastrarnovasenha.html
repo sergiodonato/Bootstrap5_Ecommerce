@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/estilos.css">
 
-    <title>Quitanda Online :: Instruções Enviadas</title>
+    <title>Quitanda Online :: Cadastro de Nova Senha</title>
 </head>
 
 <body>
@@ -60,27 +60,28 @@
                 </div>
             </div>
         </nav>
-
+ 
         <main class="flex-fill">
             <div class="container">
-                <h1>Instruções Enviadas!</h1>
-                <hr>
-                <p>
-                    Caro cliente,
-                </p>
-                <p>
-                    As instruções para a realização de cadastro de uma nova senha foram enviadas para o e-mail <b>email@frutaria.com.br</b>. Abra a mensagem que lhe enviamos e siga as instruções corretamente para cadastrar uma nova senha.
-                </p>
-                <p>
-                    Agradecemos pela confiança em nossos serviços.
-                </p>
-                <p>
-                    Cordialmente,<br>
-                    Central de Relacionamento Quitanda Online
-                </p>
-                <p>
-                    <a href="/index.html" class="btn btn-lg btn-danger">Voltar à Página Principal</a>
-                </p>
+                <div class="row justify-content-center">
+                    <form class="col-sm-10 col-md-8 col-lg-6">
+                        <h1>Digite sua nova senha</h1>
+
+                        <div class="form-floating mb-3">
+                            <input type="password" id="txtSenha" class="form-control" placeholder=" " autofocus>
+                            <label for="txtSenha">Nova Senha</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="password" id="txtConfSenha" class="form-control" placeholder=" ">
+                            <label for="txtConfSenha">Confirme a Nova Senha</label>
+                        </div>
+
+                        <button type="button" onclick="window.location.href='/confirmcadastrosenha.html'"
+                            class="btn btn-lg btn-danger">Cadastrar Nova Senha</button>
+                        
+                    </form>
+                </div>
             </div>
         </main>
 
